@@ -1,0 +1,16 @@
+
+<div class="collapse navbar-collapse" id="navbarResponsive" >
+  <table class="table table-hover">
+    <tr>
+      <th> Available lists </th>
+    </tr>
+    <tr *ngFor="let item of lists" (click)="onSelect(item)" >
+      <td> {{item.listName}}</td>
+    </tr>
+  </table>
+
+  <p></p>
+<div> </div>
+
+
+
