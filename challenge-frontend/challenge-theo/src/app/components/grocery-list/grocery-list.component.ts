@@ -3,6 +3,7 @@ import { ListGetterService } from '../../service/list-getter.service';
 import { ItemGetterService } from '../../service/item-getter.service';
 import { GroceryList } from '../../models/grocery-list';
 import { GroceryListItem } from '../../models/grocery-list-item';
+import { GroceryListsComponent } from '../grocery-lists/grocery-lists.component';
 
 @Component({
   selector: 'app-grocery-list',
@@ -14,6 +15,7 @@ export class GroceryListComponent implements OnInit {
   list: GroceryList;
   items: GroceryListItem[];
   item: GroceryListItem;
+  selectedList: GroceryList;
 
   constructor(
     private listGetter: ListGetterService,

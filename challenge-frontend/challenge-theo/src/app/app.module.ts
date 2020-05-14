@@ -10,7 +10,7 @@ import { GroceryListsComponent } from './components/grocery-lists/grocery-lists.
   declarations: [
     AppComponent,
     GroceryListComponent,
-    GroceryListsComponent
+    GroceryListsComponent,
   ],
   imports: [
     BrowserModule,
